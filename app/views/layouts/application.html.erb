@@ -33,6 +33,7 @@
           <%= link_to "View all users", users_path, class: "nav-link" %>
         </li>
       </ul>
+
       <ul class="nav app-header__user-nav-container">
         <% if @login_user %>
 
@@ -46,10 +47,9 @@
         <% else %>
 
         <li class="nav-item app-header__nav_item">
-          <%= link_to "Log In", login_path, class: "btn btn-primary" %>
+          <%= link_to "Log In With GitHub", github_login_path, class: "btn btn-primary" %>
         </li>
         <% end %>
-
       </ul>
     </nav>
   </header>
