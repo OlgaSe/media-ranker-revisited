@@ -56,6 +56,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'bootstrap'
+gem "omniauth"
+gem "omniauth-github"
+
 group :development, :test do
   gem 'pry-rails'
 end
@@ -65,8 +68,6 @@ group :development do
   gem 'guard-minitest'
   gem 'debase', '>= 0.2.4.1'
   gem 'ruby-debug-ide', '>= 0.7.0'
-  gem "omniauth"
-  gem "omniauth-github"
   gem 'dotenv-rails'
 end
 
