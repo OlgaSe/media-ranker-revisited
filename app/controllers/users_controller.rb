@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     @users = User.all
   end
@@ -8,8 +9,8 @@ class UsersController < ApplicationController
     render_404 unless @user
   end
 
-  def login_form
-  end
+  # def login_form
+  # end
 
   # def login
   #   username = params[:username]
