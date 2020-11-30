@@ -51,7 +51,7 @@
 
         <% if session[:user_id] %>
           <li class="nav-item app-header__nav_item">
-          <%= link_to "Log out", logout_path, method: "delete" %>
+          <%= link_to "Log out", logout_path, method: "post" %>
           </li>
         <% else %>
           <li class="nav-item app-header__nav_item">

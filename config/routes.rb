@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   # post "/logout", to: "users#logout", as: "logout"
 
   get "/auth/github", as: "github_login"
-  get "/auth/github/callback", to: "users#create", as: "create_user"
-  delete "/logout", to: "users#destroy", as: "logout"
+  get "/auth/:provider/callback", to: "users#create", as: "auth_callback"
+  post "/logout", to: "users#destroy", as: "logout"
 
   resources :works
   post "/works/:id/upvote", to: "works#upvote", as: "upvote"
